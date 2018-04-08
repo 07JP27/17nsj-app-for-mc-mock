@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+
+		<script
+		  src="https://code.jquery.com/jquery-3.1.1.min.js"
+		  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		  crossorigin="anonymous"></script>
+		<script src="js/semantic.min.js"></script>
+	</head>
+	<body>
+		<div class="ui blue massive inverted fixed menu">
+		  <a class="item">
+	        <img src="img/logo.png">
+		  </a>
+		  <div class="right menu">
+		    <div class="ui dropdown item">
+		      Language <i class="dropdown icon"></i>
+		      <div class="menu">
+		        <a class="item" href="#">Modern</a>
+		        <a class="item" href="index-edo.html">Edo</a>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+
+
+		<div class="ui middle aligned center aligned grid" style="height: 100%">
+		  <div class="column" style="max-width: 450px">
+
+		  	<h2 class="ui blue image header">
+		      <img src="img/pr-logo.png" class="image">
+		      <div class="content">
+		        SYSTEM for 17NSJ PR DEPT.
+		      </div>
+		    </h2>
+
+		    <form class="ui large form">
+		      <div class="ui stacked segment">
+		        <div class="field">
+		          <div class="ui left icon input">
+		            <i class="user icon"></i>
+		            <input type="text" name="email" placeholder="User ID">
+		          </div>
+		        </div>
+		        <div class="field">
+		          <div class="ui left icon input">
+		            <i class="key icon"></i>
+		            <input type="password" name="password" placeholder="Password">
+		          </div>
+		        </div>
+		        <div class="ui fluid large blue submit button">Login</div>
+		      </div>
+
+		      <div class="ui error message"></div>
+
+		    </form>
+		  </div>
+		</div>
+
+
+		<div class="ui blue inverted bottom fixed menu">
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		$('.ui.dropdown')
+		  .dropdown()
+		;
+	</script>
+</html>
