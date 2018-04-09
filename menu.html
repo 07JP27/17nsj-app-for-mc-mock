@@ -18,7 +18,9 @@
 		  </a>
 		  <div class="right menu">
 	        <div class="item">
-	        	Junpei Tsuchida<i class="dropdown icon"></i>
+	        	<div class="pop" data-content="Admin" data-position="bottom center">
+	        	Junpei Tsuchida
+	        	</div>	
 		    </div>
 		    <div class="item">
 		        <div class="ui inverted button">Logout</div>
@@ -29,17 +31,17 @@
 		<div class="ui middle aligned center aligned stackable grid container" style="height: 100%">
 		  <div class="four wide column">
 		  	<a>
-	  			<img src="img/newsinfo.png" class="ui centered image" data-title="News & Info" data-content="News & Infoの閲覧・登録・編集・削除" data-position="top center">
+	  			<img src="img/newsinfo.png" class="ui centered pop image" data-title="News & Info" data-content="News & Infoの閲覧・登録・編集・削除" data-position="top center">
 	  		</a>
 		  </div>
 		  <div class="four wide column">
 		  	<a>
-		  		<img src="img/activity.png" class="ui centered image" data-title="Activity" data-content="プログラム情報の閲覧・登録・編集・削除" data-position="top center">
+		  		<img src="img/activity.png" class="ui centered pop image" data-title="Activity" data-content="プログラム情報の閲覧・登録・編集・削除" data-position="top center">
 		  	</a>
 		  </div>
 		  <div class="four wide column">
 		  	<a>
-		  		<img src="img/member.png" class="ui centered image" data-title="Human resources" data-content="広報部員の管理" data-position="top center">
+		  		<img src="img/member.png" class="ui centered pop image" data-title="Human resources" data-content="広報部員の管理" data-position="top center">
 		  	</a>
 		  </div>
 		</div>
@@ -54,7 +56,7 @@
 	</body>
 
 	<script type="text/javascript">
-		$('img.ui.centered.image').popup();
+		$('.pop').popup();
 		$('.ui.dropdown').dropdown();
 	</script>
 </html>
