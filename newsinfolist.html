@@ -6,7 +6,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <html>
 <head>
     <meta charset="utf-8">
-    <title>テンプレート</title>
+    <title>News&Info</title>
     <!-- for responsive -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- bootstrap -->
@@ -56,22 +56,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <section class="sidebar">
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="img/kamon.png" class="img-circle" alt="User Image">
+          <img src="img/pr-dept.png" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>Junpei Tsuchida</p>
-          <p>DPT</p>
         </div>
       </div>
       <!-- Sidebar Menu -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="active"><a href="#"><i class="fa fa-home"></i> <span>News&Info</span></a></li>
-        <li><a href="#"><i class="fa fa-qrcode"></i> <span>プログラム</span></a></li>
+        <li><a href="activitylist.html"><i class="fa fa-qrcode"></i> <span>プログラム</span></a></li>
         <li class="header">管理者メニュー</li>
-        <li><a href="#"><i class="fa fa-users"></i> <span>ユーザー</span></a></li>
-        <li><a href="#"><i class="fa fa-gears"></i> <span>News&Info</span></a></li>
-        <li><a href="#"><i class="fa fa-gears"></i> <span>プログラム</span></a></li>
-        <li><a href="#"><i class="fa fa-gears"></i> <span>オフィシャルグッズ</span></a></li>
+        <li><a href="userlist.html"><i class="fa fa-users"></i> <span>ユーザー</span></a></li>
+        <li><a href="jamgoodslist.html"><i class="fa fa-gears"></i> <span>オフィシャルグッズ</span></a></li>
       </ul>
       <!-- /.sidebar-menu -->
     </section>
@@ -79,9 +76,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
   </aside>
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+  <div class="content-wrapper" style="height:100px;overflow:auto;">
     <section class="content-header">
-      <h1>News&Info</h1>
+      <h1>News&Info - List</h1>
     </section>
     <section class="content">
       <div>
@@ -92,94 +89,90 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <div class="input-group">
                   <input type="text" name="q" class="form-control" placeholder="Search...">
                       <span class="input-group-btn">
-                        <button type="submit" name="search" id="search-btn" class="btn"><i class="fa fa-search"></i>
+                        <button type="submit" name="search" id="search-btn" class="btn btn-info"><i class="fa fa-search"></i>
                         </button>
                       </span>
                 </div>
               </form>
               </div>
+              <div class="col-md-7">
+                <span class="label label-info">お知らせ</span>
+                <span class="label label-success">スカウト通信員</span>
+                <span class="label label-warning">プログラム</span>
+                <span class="label label-danger">ニュース</span>
+              </div>
+              <a href="newsinforegister.html">
+              <button type="button" class="btn btn-primary pull-right" onclick="addrow()"><i class="fa fa-plus"></i></button>
+              </a>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
               <ul class="products-list product-list-in-box">
-                <li class="item">
+
+                <li class="item"  style="border-left: 15px solid blue; padding: 0px; margin-bottom: 10px;">
                   <div class="product-img">
-                    <img src="https://placehold.jp/100x100.png" alt="Product Image">
+                    <img src="https://placehold.jp/100x100.png" alt="Product Image" style="height: 100px; width: 100px; margin-left: 5px; margin-right: 5px;">
                   </div>
                   <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title">ニュース６
-                      <span class="label label-info">お知らせ</span>
-                    </a>
+                    <h4 class="product-title" style="margin: 0px">
+                      <a href="newsinfodetail.html">ニュース６</a>
+                    </h4>
                     <span class="product-description">
                       ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事
                     </span>
+                    <a href="newsinfoedit.html"><button type="button" class="btn btn-info btn-flat">Edit<small>（管理者のみ表示）</small></button></a>
+                    <a href="newsinfodelete.html"><button type="button" class="btn btn-danger btn-flat">Delete<small>（管理者のみ表示）</small></button></a>
                   </div>
                 </li>
-                <li class="item">
+
+                <li class="item"  style="border-left: 15px solid blue; padding: 0px; margin-bottom: 10px;">
                   <div class="product-img">
-                    <img src="https://placehold.jp/100x100.png" alt="Product Image">
+                    <img src="https://placehold.jp/100x100.png" alt="Product Image" style="height: 100px; width: 100px; margin-left: 5px; margin-right: 5px;">
                   </div>
                   <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title">ニュース５
-                      <span class="label label-info">お知らせ</span>
-                    </a>
+                    <h4 class="product-title" style="margin: 0px">
+                      <a href="newsinfodetail.html">ニュース６</a>
+                    </h4>
                     <span class="product-description">
                       ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事
                     </span>
+                    <a href="newsinfoedit.html"><button type="button" class="btn btn-info btn-flat">Edit<small>（管理者のみ表示）</small></button></a>
+                    <a href="newsinfodelete.html"><button type="button" class="btn btn-danger btn-flat">Delete<small>（管理者のみ表示）</small></button></a>
                   </div>
                 </li>
-                <li class="item">
+
+                <li class="item"  style="border-left: 15px solid blue; padding: 0px; margin-bottom: 10px;">
                   <div class="product-img">
-                    <img src="https://placehold.jp/100x100.png" alt="Product Image">
+                    <img src="https://placehold.jp/100x100.png" alt="Product Image" style="height: 100px; width: 100px; margin-left: 5px; margin-right: 5px;">
                   </div>
                   <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title">ニュース４
-                      <span class="label label-success">大会本部より</span>
-                    </a>
+                    <h4 class="product-title" style="margin: 0px">
+                      <a href="newsinfodetail.html">ニュース６</a>
+                    </h4>
                     <span class="product-description">
                       ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事
                     </span>
+                    <a href="newsinfoedit.html"><button type="button" class="btn btn-info btn-flat">Edit<small>（管理者のみ表示）</small></button></a>
+                    <a href="newsinfodelete.html"><button type="button" class="btn btn-danger btn-flat">Delete<small>（管理者のみ表示）</small></button></a>
                   </div>
                 </li>
-                <li class="item">
+
+                <li class="item"  style="border-left: 15px solid blue; padding: 0px; margin-bottom: 10px;">
                   <div class="product-img">
-                    <img src="https://placehold.jp/100x100.png" alt="Product Image">
+                    <img src="https://placehold.jp/100x100.png" alt="Product Image" style="height: 100px; width: 100px; margin-left: 5px; margin-right: 5px;">
                   </div>
                   <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title">ニュース３
-                      <span class="label label-warning">プログラム</span>
-                    </a>
+                    <h4 class="product-title" style="margin: 0px">
+                      <a href="newsinfodetail.html">ニュース６</a>
+                    </h4>
                     <span class="product-description">
                       ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事
                     </span>
+                    <a href="newsinfoedit.html"><button type="button" class="btn btn-info btn-flat">Edit<small>（管理者のみ表示）</small></button></a>
+                    <a href="newsinfodelete.html"><button type="button" class="btn btn-danger btn-flat">Delete<small>（管理者のみ表示）</small></button></a>
                   </div>
                 </li>
-                <li class="item">
-                  <div class="product-img">
-                    <img src="https://placehold.jp/100x100.png" alt="Product Image">
-                  </div>
-                  <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title">ニュース２
-                      <span class="label label-info">お知らせ</span>
-                    </a>
-                    <span class="product-description">
-                      ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事
-                    </span>
-                  </div>
-                </li>
-                <li class="item">
-                  <div class="product-img">
-                    <img src="https://placehold.jp/100x100.png" alt="Product Image">
-                  </div>
-                  <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title">ニュース１
-                      <span class="label label-warning">プログラム</span>
-                    </a>
-                    <span class="product-description">
-                      ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事ニュース記事
-                    </span>
-                  </div>
-                </li>
+      
               </ul>
             </div>
             <!-- /.box-body -->
