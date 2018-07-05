@@ -62,18 +62,23 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <nav class="navbar navbar-static-top" role="navigation">
       <a href="" class="sidebar-toggle" data-toggle="offcanvas" role="button">
         <span class="sr-only">Toggle navigation</span>
-      </a>   
+      </a>  
+
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
-          <!-- Messages: style can be found in dropdown.less-->
-          <li class="dropdown messages-menu">
-            <a href="index.html" style="padding-top: 10px; padding-bottom: 10px">
-              <i class="fa fa-sign-out" style="font-size: 30px"></i>
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+              <i class="fa fa-flag-o"></i>
             </a>
-          </li>
+              <ul class="dropdown-menu">
+                <li class="user-header" style="text-align: center; height: 100px;">
+                    <a href="index.html"><button class="btn btn-success">Signout</button></a>
+                </li>
+              </ul>
+            </li>
         </ul>
       </div>
-      <div style="text-align: center; padding: 15px;">
+      <div class="hidden-sm hidden-xs" style="text-align: center; padding: 15px;">
           <img src="img/logomoji.png" class="image" style="float: left; height: 25px; margin-top: -2px;">        
       </div>
     </nav>
